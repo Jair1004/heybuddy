@@ -1,27 +1,112 @@
 import React, { Component } from 'react'
-import { ScrollView, Text, Image, View } from 'react-native'
+import PropTypes from 'prop-types'
+import { ScrollView, Text, Image, View, FlatList, TouchableHighlight } from 'react-native'
 import { Images } from '../Themes'
 
 // Styles
 import styles from './Styles/LaunchScreenStyles'
 
 export default class LaunchScreen extends Component {
+  // prop type warnings
+  static propTypes = {
+    screenList: PropTypes.array,
+  }
+
+  // defaults for props
+  static defaultProps = {
+    screenList: [
+      {
+        id: "1",
+        key: "WillYouHelpScreen"
+      },
+      {
+        id: "2",
+        key: "ShowSomeLoveScreen"
+      },
+      {
+        id: "3",
+        key: "ResourcesPageScreen"
+      },
+      {
+        id: "4",
+        key: "TitlePageScreen"
+      },
+      {
+        id: "5",
+        key: "PublishPageScreen"
+      },
+      {
+        id: "6",
+        key: "PasswordResetSuccessPageScreen"
+      },
+      {
+        id: "7",
+        key: "NotificationScreen"
+      },
+      {
+        id: "8",
+        key: "HapyBdayScreen"
+      },
+      {
+        id: "9",
+        key: "SayHapyBdayScreen"
+      },
+      {
+        id: "10",
+        key: "FeedbackScreen"
+      },
+      {
+        id: "11",
+        key: "RateMeetUpScreen"
+      },
+      {
+        id: "12",
+        key: "CountDownTimerScreen"
+      },
+      {
+        id: "13",
+        key: "ConsentScreen"
+      },
+      {
+        id: "14",
+        key: "CheckedInScreen"
+      },
+
+    ]
+  }
+
+  _onPress = (screen) => {
+    this.props.navigation.navigate(screen);
+  }
+
+  _renderItems = ({item, separators}) => {
+    return (
+      <TouchableHighlight style={{ alignContent : 'center', justifyContent : 'center', height : 40, width : '100%' }}
+        onPress={() => this._onPress(item.key)}
+        onShowUnderlay={separators.highlight}
+        onHideUnderlay={separators.unhighlight}
+      >
+        <Text style={{ textAlign : 'center' }}>
+          {item.key}
+        </Text>
+      </TouchableHighlight>
+    );
+  }
+
+  _keyExtractor = (item, index) => item.id
+
   render () {
     return (
       <View style={styles.mainContainer}>
-        <Image source={Images.background} style={styles.backgroundImage} resizeMode='stretch' />
         <ScrollView style={styles.container}>
-          <View style={styles.centered}>
-            <Image source={Images.launch} style={styles.logo} />
-          </View>
-
-          <View style={styles.section} >
-            <Image source={Images.ready} />
-            <Text style={styles.sectionText}>
-              This probably isn't what your app is going to look like. Unless your designer handed you this screen and, in that case, congrats! You're ready to ship. For everyone else, this is where you'll see a live preview of your fully functioning app using Ignite.
-            </Text>
-          </View>
-
+          <FlatList
+            ItemSeparatorComponent={({highlighted}) => (
+              <View style={[highlighted && {marginLeft: 0}]} />
+            )}
+            data={this.props.screenList}
+            keyExtractor={this._keyExtractor}
+            renderItem={this._renderItems}
+          />
         </ScrollView>
       </View>
     )

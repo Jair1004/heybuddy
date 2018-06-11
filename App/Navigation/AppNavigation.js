@@ -19,24 +19,24 @@ import styles from './Styles/NavigationStyles'
 
 // Manifest of possible screens
 const PrimaryNav = StackNavigator({
-  CheckedInScreen: { screen: CheckedInScreen },
-  ConsentScreen: { screen: ConsentScreen },
-  CountDownTimerScreen: { screen: CountDownTimerScreen },
-  RateMeetUpScreen: { screen: RateMeetUpScreen },
-  FeedbackScreen: { screen: FeedbackScreen },
-  SayHapyBdayScreen: { screen: SayHapyBdayScreen },
-  HapyBdayScreen: { screen: HapyBdayScreen },
-  NotificationScreen: { screen: NotificationScreen },
-  PasswordResetSuccessPageScreen: { screen: PasswordResetSuccessPageScreen },
-  PublishPageScreen: { screen: PublishPageScreen },
-  TitlePageScreen: { screen: TitlePageScreen },
-  ResourcesPageScreen: { screen: ResourcesPageScreen },
-  ShowSomeLoveScreen: { screen: ShowSomeLoveScreen },
-  WillYouHelpScreen: { screen: WillYouHelpScreen },
-  LaunchScreen: { screen: LaunchScreen }
+  CheckedInScreen: { screen: CheckedInScreen, navigationOptions: {title: 'CheckedInScreen'}},
+  ConsentScreen: { screen: ConsentScreen, navigationOptions: {title: 'ConsentScreen'}},
+  CountDownTimerScreen: { screen: CountDownTimerScreen, navigationOptions: {title: 'CountDownTimerScreen'}},
+  RateMeetUpScreen: { screen: RateMeetUpScreen, navigationOptions: {title: 'RateMeetUpScreen'}},
+  FeedbackScreen: { screen: FeedbackScreen, navigationOptions: {title: 'FeedbackScreen'}},
+  SayHapyBdayScreen: { screen: SayHapyBdayScreen, navigationOptions: {title: 'SayHapyBdayScreen'}},
+  HapyBdayScreen: { screen: HapyBdayScreen, navigationOptions: {title: 'HapyBdayScreen'}},
+  NotificationScreen: { screen: NotificationScreen, navigationOptions: {title: 'NotificationScreen'}},
+  PasswordResetSuccessPageScreen: { screen: PasswordResetSuccessPageScreen, navigationOptions: {title: 'PasswordResetSuccessPageScreen'}},
+  PublishPageScreen: { screen: PublishPageScreen, navigationOptions: {title: 'PublishPageScreen'}},
+  TitlePageScreen: { screen: TitlePageScreen, navigationOptions: {title: 'TitlePageScreen'}},
+  ResourcesPageScreen: { screen: ResourcesPageScreen, navigationOptions: {title: 'ResourcesPageScreen'}},
+  ShowSomeLoveScreen: { screen: ShowSomeLoveScreen, navigationOptions: {title: 'ShowSomeLoveScreen'}},
+  WillYouHelpScreen: { screen: WillYouHelpScreen, navigationOptions: {title: 'WillYouHelpScreen'}},
+  LaunchScreen: { screen: LaunchScreen, navigationOptions: {title: 'LaunchScreen'}}
 }, {
   // Default config for all screens
-  headerMode: 'none',
+  headerMode: 'float',
   initialRouteName: 'LaunchScreen',
   navigationOptions: {
     headerStyle: styles.header
