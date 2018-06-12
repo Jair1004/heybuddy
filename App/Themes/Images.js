@@ -19,7 +19,15 @@ const images = {
   chevronRight: require('../Images/Icons/chevron-right.png'),
   hamburger: require('../Images/Icons/hamburger.png'),
   backButton: require('../Images/Icons/back-button.png'),
-  closeButton: require('../Images/Icons/close-button.png')
+  closeButton: require('../Images/Icons/close-button.png'),
+  defaultAvatar: require('../Images/avatar.png'),
+  instagram: require('../Images/instagram.png'),
+  facebook: require('../Images/facebook.png'),
+  snapchat: require('../Images/snapchat.png'),
+  pinterest: require('../Images/pinterest.png'),
+  youtube: require('../Images/youtube.png'),
+  twitter: require('../Images/twitter.png'),
+  buddyLogo: require('../Images/buddyLogo.png'),
 }
 
 export default images

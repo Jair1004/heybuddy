@@ -19,27 +19,42 @@ import styles from './Styles/NavigationStyles'
 
 // Manifest of possible screens
 const PrimaryNav = StackNavigator({
-  CheckedInScreen: { screen: CheckedInScreen, navigationOptions: {title: 'CheckedInScreen'}},
-  ConsentScreen: { screen: ConsentScreen, navigationOptions: {title: 'ConsentScreen'}},
-  CountDownTimerScreen: { screen: CountDownTimerScreen, navigationOptions: {title: 'CountDownTimerScreen'}},
-  RateMeetUpScreen: { screen: RateMeetUpScreen, navigationOptions: {title: 'RateMeetUpScreen'}},
-  FeedbackScreen: { screen: FeedbackScreen, navigationOptions: {title: 'FeedbackScreen'}},
-  SayHapyBdayScreen: { screen: SayHapyBdayScreen, navigationOptions: {title: 'SayHapyBdayScreen'}},
-  HapyBdayScreen: { screen: HapyBdayScreen, navigationOptions: {title: 'HapyBdayScreen'}},
-  NotificationScreen: { screen: NotificationScreen, navigationOptions: {title: 'NotificationScreen'}},
-  PasswordResetSuccessPageScreen: { screen: PasswordResetSuccessPageScreen, navigationOptions: {title: 'PasswordResetSuccessPageScreen'}},
-  PublishPageScreen: { screen: PublishPageScreen, navigationOptions: {title: 'PublishPageScreen'}},
-  TitlePageScreen: { screen: TitlePageScreen, navigationOptions: {title: 'TitlePageScreen'}},
-  ResourcesPageScreen: { screen: ResourcesPageScreen, navigationOptions: {title: 'ResourcesPageScreen'}},
-  ShowSomeLoveScreen: { screen: ShowSomeLoveScreen, navigationOptions: {title: 'ShowSomeLoveScreen'}},
-  WillYouHelpScreen: { screen: WillYouHelpScreen, navigationOptions: {title: 'WillYouHelpScreen'}},
-  LaunchScreen: { screen: LaunchScreen, navigationOptions: {title: 'LaunchScreen'}}
+  CheckedInScreen: { screen: CheckedInScreen, navigationOptions: 
+    { title: 'CheckedInScreen', headerStyle: styles.blueHeader}},
+  ConsentScreen: { screen: ConsentScreen, navigationOptions: 
+    { title: 'ConsentScreen', headerStyle: styles.blueHeader}},
+  CountDownTimerScreen: { screen: CountDownTimerScreen, navigationOptions: 
+    { title: 'CountDownTimerScreen', headerStyle: styles.blueHeader}},
+  RateMeetUpScreen: { screen: RateMeetUpScreen, navigationOptions: 
+    { title: 'RateMeetUpScreen', headerStyle: styles.blueHeader}},
+  FeedbackScreen: { screen: FeedbackScreen, navigationOptions: 
+    { title: 'FeedbackScreen', headerStyle: styles.blueHeader}},
+  SayHapyBdayScreen: { screen: SayHapyBdayScreen, navigationOptions: 
+    { title: 'SayHapyBdayScreen', headerStyle: styles.blueHeader}},
+  HapyBdayScreen: { screen: HapyBdayScreen, navigationOptions: 
+    { title: 'HapyBdayScreen', headerStyle: styles.blueHeader}},
+  NotificationScreen: { screen: NotificationScreen, navigationOptions: 
+    { title: 'NotificationScreen', headerStyle: styles.blueHeader}},
+  PasswordResetSuccessPageScreen: { screen: PasswordResetSuccessPageScreen, navigationOptions: 
+    { title: 'PasswordResetSuccessPageScreen', headerStyle: styles.blueHeader}},
+  PublishPageScreen: { screen: PublishPageScreen, navigationOptions: 
+    { title: 'PublishPageScreen', headerStyle: styles.blueHeader}},
+  TitlePageScreen: { screen: TitlePageScreen, navigationOptions: 
+    { title: 'TitlePageScreen', headerStyle: styles.blueHeader}},
+  ResourcesPageScreen: { screen: ResourcesPageScreen, navigationOptions: 
+    { title: 'ResourcesPageScreen', headerStyle: styles.blueHeader}},
+  ShowSomeLoveScreen: { screen: ShowSomeLoveScreen, navigationOptions: 
+    { title: 'Show some love', headerStyle: styles.blueHeader}},
+  WillYouHelpScreen: { screen: WillYouHelpScreen, navigationOptions: 
+    { title: 'Will You Help?', headerStyle: styles.orangeHeader}},
+  LaunchScreen: { screen: LaunchScreen, navigationOptions: 
+    { title: 'LaunchScreen', headerStyle: styles.orangeHeader}}
 }, {
   // Default config for all screens
   headerMode: 'float',
   initialRouteName: 'LaunchScreen',
   navigationOptions: {
-    headerStyle: styles.header
+    headerTintColor: 'white'
   }
 })
 
