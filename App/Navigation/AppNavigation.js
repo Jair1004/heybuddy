@@ -40,9 +40,9 @@ const PrimaryNav = StackNavigator({
   PublishPageScreen: { screen: PublishPageScreen, navigationOptions: 
     { title: 'PublishPageScreen', headerStyle: styles.blueHeader}},
   TitlePageScreen: { screen: TitlePageScreen, navigationOptions: 
-    { title: 'TitlePageScreen', headerStyle: styles.blueHeader}},
+    { title: 'Title', headerStyle: styles.blueHeader}},
   ResourcesPageScreen: { screen: ResourcesPageScreen, navigationOptions: 
-    { title: 'ResourcesPageScreen', headerStyle: styles.blueHeader}},
+    { title: 'Resources', headerStyle: styles.blueHeader}},
   ShowSomeLoveScreen: { screen: ShowSomeLoveScreen, navigationOptions: 
     { title: 'Show some love', headerStyle: styles.blueHeader}},
   WillYouHelpScreen: { screen: WillYouHelpScreen, navigationOptions: 

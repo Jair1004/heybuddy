@@ -13,7 +13,8 @@ const ApplicationStyles = {
     },
     contentText: {
     	...Fonts.style.h4,
-    	color: 'white'
+      color: 'white',
+      textAlign: 'center'
     }
   }
 }
