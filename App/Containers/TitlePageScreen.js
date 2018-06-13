@@ -62,7 +62,8 @@ class TitlePageScreen extends Component {
               justifyContent: 'center',
               margin: 10,
               width: 36, 
-              height: 36 }} 
+              height: 36 }}
+            onPress={this._onGetPhoto}
           >
             <Icon name="camera" size={20} color={Colors.blueHeader} />
           </TouchableOpacity>
