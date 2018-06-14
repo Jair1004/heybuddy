@@ -67,6 +67,8 @@ class ResourcesPageScreen extends Component {
             style={{ 
               marginRight : 10, 
               backgroundColor: Colors.pinkBackground, 
+              borderWidth: 2,
+              borderColor: 'black',
               borderRadius: 18.5, 
               alignItems: 'center',
               justifyContent: 'center',

@@ -32,13 +32,13 @@ const PrimaryNav = StackNavigator({
   SayHapyBdayScreen: { screen: SayHapyBdayScreen, navigationOptions: 
     { title: 'SayHapyBdayScreen', headerStyle: styles.blueHeader}},
   HapyBdayScreen: { screen: HapyBdayScreen, navigationOptions: 
-    { title: 'HapyBdayScreen', headerStyle: styles.blueHeader}},
+    { title: '(: !!Happy Bday!! :)', headerStyle: styles.blueHeader}},
   NotificationScreen: { screen: NotificationScreen, navigationOptions: 
-    { title: 'NotificationScreen', headerStyle: styles.blueHeader}},
+    { title: 'Notifications', headerStyle: styles.blueHeader}},
   PasswordResetSuccessPageScreen: { screen: PasswordResetSuccessPageScreen, navigationOptions: 
-    { title: 'PasswordResetSuccessPageScreen', headerStyle: styles.blueHeader}},
+    { title: 'Hey There! :)', headerStyle: styles.blueHeader}},
   PublishPageScreen: { screen: PublishPageScreen, navigationOptions: 
-    { title: 'PublishPageScreen', headerStyle: styles.blueHeader}},
+    { title: 'Pre written messages', headerStyle: styles.blueHeader}},
   TitlePageScreen: { screen: TitlePageScreen, navigationOptions: 
     { title: 'Title', headerStyle: styles.blueHeader}},
   ResourcesPageScreen: { screen: ResourcesPageScreen, navigationOptions: 
