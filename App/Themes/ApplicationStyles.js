@@ -9,7 +9,7 @@ const ApplicationStyles = {
   screen: {
     titleText: {
       ...Fonts.style.h3,
-      color: 'white'
+      color: 'white',
     },
     contentText: {
     	...Fonts.style.h4,

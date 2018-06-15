@@ -53,11 +53,11 @@ export default class LaunchScreen extends Component {
       },
       {
         id: "10",
-        key: "FeedbackScreen"
+        key: "RateMeetUpScreen"
       },
       {
         id: "11",
-        key: "RateMeetUpScreen"
+        key: "FeedbackScreen"
       },
       {
         id: "12",

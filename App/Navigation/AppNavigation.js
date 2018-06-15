@@ -24,13 +24,13 @@ const PrimaryNav = StackNavigator({
   ConsentScreen: { screen: ConsentScreen, navigationOptions: 
     { title: 'ConsentScreen', headerStyle: styles.blueHeader}},
   CountDownTimerScreen: { screen: CountDownTimerScreen, navigationOptions: 
-    { title: 'CountDownTimerScreen', headerStyle: styles.blueHeader}},
-  RateMeetUpScreen: { screen: RateMeetUpScreen, navigationOptions: 
-    { title: 'RateMeetUpScreen', headerStyle: styles.blueHeader}},
+    { title: 'BUDDY TIMER', headerStyle: styles.orangeHeader}},
   FeedbackScreen: { screen: FeedbackScreen, navigationOptions: 
-    { title: 'FeedbackScreen', headerStyle: styles.blueHeader}},
+    { title: 'Feedback', headerStyle: styles.orangeHeader}},
+  RateMeetUpScreen: { screen: RateMeetUpScreen, navigationOptions: 
+    { title: 'Rate Meetup Space', headerStyle: styles.orangeHeader}},
   SayHapyBdayScreen: { screen: SayHapyBdayScreen, navigationOptions: 
-    { title: 'SayHapyBdayScreen', headerStyle: styles.blueHeader}},
+    { title: '(: !!Say Happy Bday!! :)', headerStyle: styles.blueHeader}},
   HapyBdayScreen: { screen: HapyBdayScreen, navigationOptions: 
     { title: '(: !!Happy Bday!! :)', headerStyle: styles.blueHeader}},
   NotificationScreen: { screen: NotificationScreen, navigationOptions: 

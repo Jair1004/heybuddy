@@ -10,7 +10,6 @@ import ProgressCircle from 'react-native-progress-circle'
 
 // Styles
 import styles from './Styles/WillYouHelpScreenStyle'
-import navStyles from '../Navigation/Styles/NavigationStyles.js'
 import colors from '../Themes/Colors.js'
 import images from '../Themes/Images.js'
 
@@ -54,7 +53,7 @@ class WillYouHelpScreen extends Component {
             <ProgressCircle
               percent={20}
               radius={100}
-              borderWidth={20}
+              borderWidth={30}
               color='#999'
               shadowColor='#FF9E92'
               bgColor={colors.orangeBackground}
