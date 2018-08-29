@@ -1,4 +1,6 @@
 import { StackNavigator } from 'react-navigation'
+import MapScreen from '../Containers/MapScreen'
+import LiveScreen from '../Containers/LiveScreen'
 import CheckedInScreen from '../Containers/CheckedInScreen'
 import ConsentScreen from '../Containers/ConsentScreen'
 import CountDownTimerScreen from '../Containers/CountDownTimerScreen'
@@ -19,6 +21,10 @@ import styles from './Styles/NavigationStyles'
 
 // Manifest of possible screens
 const PrimaryNav = StackNavigator({
+  MapScreen: { screen: MapScreen, navigationOptions: 
+    { title: 'MapScreen', headerStyle: styles.orangeHeader}},
+  LiveScreen: { screen: LiveScreen, navigationOptions: 
+    { title: 'LiveScreen', headerStyle: styles.pinkHeader}},
   CheckedInScreen: { screen: CheckedInScreen, navigationOptions: 
     { title: 'CheckedInScreen', headerStyle: styles.blueHeader}},
   ConsentScreen: { screen: ConsentScreen, navigationOptions: 

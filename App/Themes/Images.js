@@ -28,6 +28,7 @@ const images = {
   youtube: require('../Images/youtube.png'),
   twitter: require('../Images/twitter.png'),
   buddyLogo: require('../Images/buddyLogo.png'),
+  mapImage: require('../Images/mapimage.png')
 }
 
 export default images

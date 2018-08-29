@@ -71,6 +71,14 @@ export default class LaunchScreen extends Component {
         id: "14",
         key: "CheckedInScreen"
       },
+      {
+        id: "15",
+        key: "MapScreen"
+      },
+      {
+        id: "16",
+        key: "LiveScreen"
+      },
 
     ]
   }

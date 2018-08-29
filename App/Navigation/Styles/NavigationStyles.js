@@ -9,5 +9,9 @@ export default StyleSheet.create({
   blueHeader: {
   	backgroundColor : Colors.blueHeader,
   	paddingRight: 10
+  },
+  pinkHeader: {
+  	backgroundColor : Colors.pinkBackground,
+  	paddingRight: 10
   }
 })

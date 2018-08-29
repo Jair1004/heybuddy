@@ -11,27 +11,30 @@ export default class Avatar extends Component {
   static propTypes = {
     avatarImage: PropTypes.object,
     size: PropTypes.number.require,
+    borderColor: PropTypes.color
   }
   
   // Defaults for props
   static defaultProps = {
-    avatarImage: images.defaultAvatar
+    avatarImage: images.defaultAvatar,
+    borderColor: colors.pinkBackground
   }
 
   render () {
-    let { avatarImage, size } = this.props
+    let { avatarImage, size, borderColor } = this.props
 
     return (
       <Image 
         source={avatarImage} 
-        style={{
+        style={[{
           width : size, 
           height: size, 
-          margin: 10,
           backgroundColor : 'transparent',
           borderRadius : size / 2, 
           borderWidth : 3, 
-          borderColor: colors.pinkBackground}}
+          borderColor },
+          this.props.style
+          ]}
       />
     )
   }
