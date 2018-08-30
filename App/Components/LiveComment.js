@@ -3,7 +3,7 @@ import Icon from 'react-native-vector-icons/FontAwesome'
 import Avatar from './Avatar'
 
 // import PropTypes from 'prop-types';
-import { View, Text, TouchableOpacity } from 'react-native'
+import { View, Text, TouchableOpacity, Image } from 'react-native'
 import styles from './Styles/LiveCommentStyle'
 import { Colors, Images } from '../Themes'
 
@@ -24,7 +24,7 @@ export default class LiveComment extends Component {
       <View 
         style={[{ 
           width: 300, 
-          height: 120, 
+          height: 130, 
           borderWidth: 2,
           borderRadius: 5,
           flexDirection: 'row',
@@ -33,14 +33,14 @@ export default class LiveComment extends Component {
           borderColor: 'black'}, this.props.style]}>
         <View>
           <View style={{ flexDirection: 'row'}}>
-            <Icon name="thumbs-up" size={20} color="blue" />
+            <Image source={Images.thumbsUpSign} style={{width: 20, height: 20}} />
             <TouchableOpacity style={{ padding: 10, alignItems: 'center' }}>
               <Avatar size={30} borderColor={Colors.blueHeader} />
               <Text style={[styles.contentText, {fontSize : 15, borderBottomWidth: 2, borderColor: Colors.blueHeader}]}>username</Text>
             </TouchableOpacity>
           </View>
           <TouchableOpacity style={{ padding: 10, alignItems: 'center', flexDirection: 'row' }}>
-            <Icon name="map-pin" size={30} color="blue" />
+            <Image source={Images.pushpin} style={{width: 20, height: 20}} />
             <Text style={[styles.contentText, {fontSize : 15, marginLeft: 10}]}>location</Text>
           </TouchableOpacity>
         </View>
@@ -51,30 +51,30 @@ export default class LiveComment extends Component {
               <Icon name="check" 
                 size={20} 
                 color='white' 
-                style={{ margin : 15, borderColor: Colors.blueHeader, borderWidth: 3, borderRadius: 20 }} />
+                style={{ margin : 10, borderColor: Colors.blueHeader, borderWidth: 3, borderRadius: 20, paddingLeft: 5, paddingTop: 5 }} />
             </View>
             <View style={{flexDirection: 'row'}}>
               <Icon name="thumbs-up" size={20} color="blue"/>
-              <Text style={[styles.contentText, {fontSize : 15}]}>5 min</Text>
+              <Text style={[styles.contentText, {fontSize : 15, color: Colors.orangeHeader}]}>5 min</Text>
             </View>
           </View>
-          <Text style={[styles.contentText, {fontSize : 15}]}>Live comments</Text>
+          <Text style={[styles.contentText, {fontSize : 15, borderLeftWidth: 2, borderColor: Colors.blueHeader}]}>Live comments</Text>
           <View style={{flexDirection: 'row', justifyContent: 'space-between', width: 170}}>
             <View style={{flexDirection: 'row'}}>
               <Text style={[styles.contentText, {fontSize : 15}]}>75</Text>
-              <Icon name="thumbs-up" size={20} color="blue"/>
+              <Image source={Images.airplane} style={{width: 20, height: 20}} />
             </View>
             <View style={{flexDirection: 'row'}}>
               <Text style={[styles.contentText, {fontSize : 15}]}>75</Text>
-              <Icon name="thumbs-up" size={20} color="blue"/>
+              <Image source={Images.thumbsUpSign} style={{width: 20, height: 20}} />
             </View>
             <View style={{flexDirection: 'row'}}>
               <Text style={[styles.contentText, {fontSize : 15}]}>75</Text>
-              <Icon name="thumbs-up" size={20} color="blue"/>
+              <Image source={Images.faceWithPartyHornAndPartyHat} style={{width: 20, height: 20}} />
             </View>
             <View style={{flexDirection: 'row'}}>
               <Text style={[styles.contentText, {fontSize : 15}]}>75</Text>
-              <Icon name="thumbs-up" size={20} color="blue"/>
+              <Image source={Images.faq} style={{width: 20, height: 20, backgroundColor: 'white'}} />
             </View>
           </View>
         </View>

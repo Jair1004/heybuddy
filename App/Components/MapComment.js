@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Icon from 'react-native-vector-icons/FontAwesome'
 
 // import PropTypes from 'prop-types';
-import { View, Text, TextInput, TouchableOpacity } from 'react-native'
+import { View, Text, TextInput, TouchableOpacity, Image } from 'react-native'
 import styles from './Styles/MapCommentStyle'
 import { Colors, Images } from '../Themes'
 export default class MapComment extends Component {
@@ -23,7 +23,7 @@ export default class MapComment extends Component {
         style={[{
           alignItems: 'center'
         }, this.props.style]}>
-        <Icon name={"bell"} size={20} />
+        <Image source={Images.speakerWithThreeSoundWaves} style={{width: 30, height: 30}} />
         <TextInput style={[styles.contentText, {fontSize : 10, width: 70, height: 20, marginBottom: 5}]}/>
         <TextInput style={[styles.contentText, {
           fontSize : 10, 
@@ -49,31 +49,13 @@ export default class MapComment extends Component {
             justifyContent: 'space-between'
             }}>
             <TouchableOpacity>
-              <Icon name={"thumbs-up"} size={25} />
+              <Image source={Images.faceWithPartyHornAndPartyHat} style={{width: 30, height: 30}} />
             </TouchableOpacity>
             <TouchableOpacity>
-              <Icon name={"thumbs-up"} size={25} />
+              <Image source={Images.clinkingBeerMugs} style={{width: 30, height: 30}} />
             </TouchableOpacity>
             <TouchableOpacity>
-              <Icon name={"thumbs-up"} size={25} />
-            </TouchableOpacity>
-          </View>
-          <View style={{
-            alignItems: 'center',
-            borderColor: 'purple',
-            borderBottomWidth: 2,
-            width: 50,
-            height: 110,
-            justifyContent: 'space-between'
-            }}>
-            <TouchableOpacity>
-              <Icon name={"thumbs-up"} size={25} />
-            </TouchableOpacity>
-            <TouchableOpacity>
-              <Icon name={"thumbs-up"} size={25} />
-            </TouchableOpacity>
-            <TouchableOpacity>
-              <Icon name={"thumbs-up"} size={25} />
+              <Image source={Images.bottleWithPopping} style={{width: 30, height: 30}} />
             </TouchableOpacity>
           </View>
           <View style={{
@@ -85,13 +67,31 @@ export default class MapComment extends Component {
             justifyContent: 'space-between'
             }}>
             <TouchableOpacity>
-              <Icon name={"thumbs-up"} size={25} />
+              <Image source={Images.partyPopper} style={{width: 30, height: 30}} />
             </TouchableOpacity>
             <TouchableOpacity>
-              <Icon name={"thumbs-up"} size={25} />
+              <Image source={Images.crystalBall} style={{width: 30, height: 30}} />
             </TouchableOpacity>
             <TouchableOpacity>
-              <Icon name={"thumbs-up"} size={25} />
+              <Image source={Images.speakerWithOneSoundWave} style={{width: 30, height: 30}} />
+            </TouchableOpacity>
+          </View>
+          <View style={{
+            alignItems: 'center',
+            borderColor: 'purple',
+            borderBottomWidth: 2,
+            width: 50,
+            height: 110,
+            justifyContent: 'space-between'
+            }}>
+            <TouchableOpacity>
+              <Image source={Images.dancerEmojiModifierFitzpatrickType} style={{width: 30, height: 30}} />
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <Image source={Images.dancer} style={{width: 30, height: 30}} />
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <Image source={Images.partyPopper} style={{width: 30, height: 30}} />
             </TouchableOpacity>
           </View>
         </View>

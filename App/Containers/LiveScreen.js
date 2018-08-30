@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { ScrollView, Text, TouchableOpacity, View } from 'react-native'
+import { ScrollView, Text, TouchableOpacity, View, Image } from 'react-native'
 import { connect } from 'react-redux'
 import Icon from 'react-native-vector-icons/FontAwesome'
 
@@ -17,7 +17,7 @@ class LiveScreen extends Component {
   static navigationOptions = {
     headerLeft: ( 
       <View style={{ flexDirection: 'row'}}>
-        <Icon name="thumbs-up" size={20} color="blue" style={{marginTop: 10, marginLeft: 10}}/>
+        <Image source={Images.thumbsUpSign} style={{width: 20, height: 20, marginTop: 10, marginLeft: 10}} />
         <TouchableOpacity style={{ padding: 10, alignItems: 'center' }}>
           <Avatar size={30} borderColor={Colors.blueHeader} />
           <Text style={[styles.contentText, {fontSize : 15}]}>username</Text>
@@ -30,12 +30,12 @@ class LiveScreen extends Component {
         <Icon name="check" 
           size={30} 
           color='white' 
-          style={{ margin : 15, borderColor: Colors.blueHeader, borderWidth: 3, borderRadius: 20 }} />
+          style={{ margin : 10, borderColor: Colors.blueHeader, borderWidth: 3, borderRadius: 20, paddingLeft: 5, paddingTop: 5 }} />
       </View>
     ),
     headerRight:(
       <TouchableOpacity style={{ padding: 10, alignItems: 'center' }}>
-        <Icon name="map-pin" size={30} color="blue" />
+        <Image source={Images.pushpin} style={{width: 20, height: 20}} />
         <Text style={[styles.contentText, {fontSize : 15}]}>location</Text>
       </TouchableOpacity>
     ),
@@ -55,7 +55,7 @@ class LiveScreen extends Component {
               borderBottomWidth: 3, 
               borderColor: Colors.blueHeader}}>
             <View style={{flex: 1, borderRightWidth: 2, padding: 5, borderColor: Colors.orangeHeader, flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-end'}}>
-              <Icon name="map-pin" size={30} color="blue" />
+              <Image source={Images.pushpin} style={{width: 40, height: 40, backgroundColor: 'white'}} />
               <TouchableOpacity 
                 style={{
                   backgroundColor: Colors.pinkBackground,
@@ -80,7 +80,7 @@ class LiveScreen extends Component {
                 }}>
                 <Text style={[styles.contentText, {fontSize : 25}]}>Videos</Text>
               </TouchableOpacity>
-              <Icon name="camera" size={30} color="blue" />
+              <Image source={Images.cameraWithFlash} style={{width: 40, height: 40, backgroundColor: 'white'}} />
             </View>
           </View>
           <View style={{ flexDirection: 'row', padding : 5, height: 60 }}>

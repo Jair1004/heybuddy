@@ -28,7 +28,21 @@ const images = {
   youtube: require('../Images/youtube.png'),
   twitter: require('../Images/twitter.png'),
   buddyLogo: require('../Images/buddyLogo.png'),
-  mapImage: require('../Images/mapimage.png')
+  mapImage: require('../Images/mapimage.png'),
+  airplane: require('../Images/airplane.png'),
+  bottleWithPopping: require('../Images/bottle-with-popping.png'),
+  cameraWithFlash: require('../Images/camera-with-flash.png'),
+  clinkingBeerMugs: require('../Images/clinking-beer-mugs.png'),
+  crystalBall: require('../Images/crystal-ball.png'),
+  dancer: require('../Images/dancer.png'),
+  dancerEmojiModifierFitzpatrickType: require('../Images/dancer_emoji-modifier-fitzpatrick-type.png'),
+  faceWithPartyHornAndPartyHat: require('../Images/face-with-party-horn-and-party-hat.png'),
+  manDancing: require('../Images/man-dancing.png'),
+  partyPopper: require('../Images/party-popper.png'),
+  pushpin: require('../Images/pushpin.png'),
+  speakerWithOneSoundWave: require('../Images/speaker-with-one-sound-wave.png'),
+  speakerWithThreeSoundWaves: require('../Images/speaker-with-three-sound-waves.png'),
+  thumbsUpSign: require('../Images/thumbs-up-sign.png')
 }
 
 export default images
