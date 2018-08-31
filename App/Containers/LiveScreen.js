@@ -25,7 +25,7 @@ class LiveScreen extends Component {
       </View>
     ),
     headerTitle: (
-      <View style={{ marginLeft : 70, flexDirection: 'row', alignItems: 'center'}}>
+      <View style={{ marginLeft : 100, flexDirection: 'row', alignItems: 'center'}}>
         <Text style={[styles.contentText, {fontSize : 30}]}>Live</Text>
         <Icon name="check" 
           size={30} 

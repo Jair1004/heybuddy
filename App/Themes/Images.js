@@ -42,7 +42,11 @@ const images = {
   pushpin: require('../Images/pushpin.png'),
   speakerWithOneSoundWave: require('../Images/speaker-with-one-sound-wave.png'),
   speakerWithThreeSoundWaves: require('../Images/speaker-with-three-sound-waves.png'),
-  thumbsUpSign: require('../Images/thumbs-up-sign.png')
+  thumbsUpSign: require('../Images/thumbs-up-sign.png'),
+  BluecommentBubble: require('../Images/Bluecommentbubble.png'),
+  Colorfulbar: require('../Images/Colorfulbar.png'),
+  blue_white_clock: require('../Images/blue_white_clock.png'),
+  White_eyeball: require('../Images/White_eyeball.png'),
 }
 
 export default images

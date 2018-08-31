@@ -27,8 +27,9 @@ export default class CircleRegion extends Component {
           width: this.props.size, 
           height: this.props.size,
           borderRadius: this.props.size / 2, 
-          backgroundColor: 'purple', 
-          opacity: 0.5}, this.props.style]}>
+          backgroundColor: 'rgba(210,12,45,0.2)', 
+          borderWidth: 3,
+          borderColor: 'white'}, this.props.style]}>
         <Avatar size={30} style={{position: 'absolute', left: 20, top: 40}} />
         <Avatar size={30} style={{position: 'absolute', left: 60, top: 70}} />
       </View>

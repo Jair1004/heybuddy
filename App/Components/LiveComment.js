@@ -54,27 +54,27 @@ export default class LiveComment extends Component {
                 style={{ margin : 10, borderColor: Colors.blueHeader, borderWidth: 3, borderRadius: 20, paddingLeft: 5, paddingTop: 5 }} />
             </View>
             <View style={{flexDirection: 'row'}}>
-              <Icon name="thumbs-up" size={20} color="blue"/>
+              <Image source={Images.blue_white_clock} style={{width: 20, height: 20}} />
               <Text style={[styles.contentText, {fontSize : 15, color: Colors.orangeHeader}]}>5 min</Text>
             </View>
           </View>
           <Text style={[styles.contentText, {fontSize : 15, borderLeftWidth: 2, borderColor: Colors.blueHeader}]}>Live comments</Text>
           <View style={{flexDirection: 'row', justifyContent: 'space-between', width: 170}}>
-            <View style={{flexDirection: 'row'}}>
+            <View style={{flexDirection: 'row', alignItems: 'flex-end'}}>
               <Text style={[styles.contentText, {fontSize : 15}]}>75</Text>
               <Image source={Images.airplane} style={{width: 20, height: 20}} />
             </View>
-            <View style={{flexDirection: 'row'}}>
+            <View style={{flexDirection: 'row', alignItems: 'flex-end'}}>
               <Text style={[styles.contentText, {fontSize : 15}]}>75</Text>
               <Image source={Images.thumbsUpSign} style={{width: 20, height: 20}} />
             </View>
-            <View style={{flexDirection: 'row'}}>
+            <View style={{flexDirection: 'row', alignItems: 'flex-end'}}>
               <Text style={[styles.contentText, {fontSize : 15}]}>75</Text>
-              <Image source={Images.faceWithPartyHornAndPartyHat} style={{width: 20, height: 20}} />
+              <Image source={Images.White_eyeball} style={{width: 25, height: 16}} />
             </View>
-            <View style={{flexDirection: 'row'}}>
+            <View style={{flexDirection: 'row', alignItems: 'flex-end'}}>
               <Text style={[styles.contentText, {fontSize : 15}]}>75</Text>
-              <Image source={Images.faq} style={{width: 20, height: 20, backgroundColor: 'white'}} />
+              <Image source={Images.BluecommentBubble} style={{width: 25, height: 16}} />
             </View>
           </View>
         </View>

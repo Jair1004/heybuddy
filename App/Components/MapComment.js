@@ -31,6 +31,7 @@ export default class MapComment extends Component {
           height: 30, 
           borderColor: 'black',
           borderWidth: 1,
+          borderTopWidth: 0,
           borderRadius: 3,
           marginBottom: 5,
           backgroundColor: Colors.pinkBackground}]}/>
@@ -38,12 +39,11 @@ export default class MapComment extends Component {
           alignItems: 'center',
           borderColor: 'purple',
           borderWidth: 2,
-          borderBottomWidth: 0,
+          borderTopWidth: 0,
         }}>
+          <Image source={Images.Colorfulbar} style={{width: 60, height: 8}} resizeMode={"stretch"} />
           <View style={{
             alignItems: 'center',
-            borderColor: 'purple',
-            borderBottomWidth: 2,
             width: 50,
             height: 110,
             justifyContent: 'space-between'
@@ -58,10 +58,9 @@ export default class MapComment extends Component {
               <Image source={Images.bottleWithPopping} style={{width: 30, height: 30}} />
             </TouchableOpacity>
           </View>
+          <Image source={Images.Colorfulbar} style={{width: 60, height: 8}} resizeMode={"stretch"} />
           <View style={{
             alignItems: 'center',
-            borderColor: 'purple',
-            borderBottomWidth: 2,
             width: 50,
             height: 110,
             justifyContent: 'space-between'
@@ -76,10 +75,9 @@ export default class MapComment extends Component {
               <Image source={Images.speakerWithOneSoundWave} style={{width: 30, height: 30}} />
             </TouchableOpacity>
           </View>
+          <Image source={Images.Colorfulbar} style={{width: 60, height: 8}} resizeMode={"stretch"} />
           <View style={{
             alignItems: 'center',
-            borderColor: 'purple',
-            borderBottomWidth: 2,
             width: 50,
             height: 110,
             justifyContent: 'space-between'
